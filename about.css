@@ -9,8 +9,8 @@
 
 }body{
     font-size: 30px;
-    color: rgb(250, 13, 13);
-    background-color: black;
+    color: black;
+    background-color:white;
     /* /* rgin: 0;ma/ */
     /* font-family: arial; */ */
     /* background-image: url(https://images.pexels.com/photos/4626343/pexels-photo-4626343.jpeg?auto=compress&cs=tinysrgb&w=600) */
@@ -18,13 +18,13 @@
 
 
 .LOG{
-    color: rgb(209, 23, 23)
+    color: rgb(211, 17, 17)
 }
 .NAVLINKS{
-    color:white
+    color: rgb(255, 0, 0);
 }
 .NAVLINKS > a{
-    color: white;
+    color: blue;
     text-decoration: none;
     margin: 16px;
 }
@@ -33,6 +33,7 @@ width: 50%;
 height: 50%;
 object-fit: cover;
 display: block;
+
 }
 .hero-content{
     position: absolute;
@@ -47,7 +48,7 @@ display: block;
    
 }
 .hero-content > h1 {
-    font-size:70px;
+    font-size:50px;
     color: rgb(226, 224, 233);
     width: 70%;
     margin: auto;
@@ -77,21 +78,44 @@ margin:20px 0 ;
 
 }
 .hero-content > h2{
-    margin: auto;
-    flex-direction: row;
+    margin: 0 auto;
+    flex-direction: column;
     width: 100%;
     color: #f5bd07;
-    font-size: 50px;
+    font-size: 30px;
 }
-colum{
+.colum{
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
-    -ms-flex: 25;
+    padding: 0 50px;
+    margin-top: 18px;
+    justify-content: center;
+    display: flex;
+    vertical-align: middle;
+    
     }
     
-    .colum > img{
-        margin-top: 100px;
-        width: 40%;
-        vertical-align: middle;
+    /* .colum > img{
+        margin-top: 200px;
+        width: 20%;
+        padding: 0 20px;
+        min-height: fit-content;
+         */
+    /* } */
+    .destination > h1{
+    margin: 200px;
+    justify-content: center;
+    margin-bottom: 50px;
     }
+    .section p{
+    line-height: 1.6;
+    font-size: 16px;
+    }
+    .colum > img{
+        max-width: 50%;
+        height: auto;
+        display: block;
+        margin: 30px;
+        border-radius: 8px;
+        } 
+    
