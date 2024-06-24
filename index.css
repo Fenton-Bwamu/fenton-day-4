@@ -1,147 +1,205 @@
-body{
-    font-size: 30px;
-    color: rgb(250, 13, 13);
-    background-color: black;
-    /* rgin: 0;ma
-    font-family: arial; */
-    /* background-image: url(https://images.pexels.com/photos/4626343/pexels-photo-4626343.jpeg?auto=compress&cs=tinysrgb&w=600) */
-    
-    
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.NAVIGATION{
-    width: 70%;
-    margin: auto;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222;
+    color: #eee;
+    padding: 20px;
+}
+
+header {
     display: flex;
-    align-items: center;
-    flex-direction: row;
     justify-content: space-between;
-
-
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    margin-bottom: 20px;
 }
 
-.LOG{
-    color: rgb(209, 23, 23)
+.logo {
+    font-size: 2em;
+    color: #d6cdcd;
 }
-.NAVLINKS{
-    color:white
-}
-.NAVLINKS > a{
-    color: white;
+
+.nav-links a {
+    color: #ddd;
     text-decoration: none;
-    margin: 16px;
+    margin: 0 16px;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
-.hero img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
-}
-.hero-content{
-    position: absolute;
-    top: 75%;
-    bottom: -750px;
-    width:  100%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 50px;
-    flex-direction: row;
-    text-align: center;
-   
-}
-.hero-content > h1 {
-    font-size:70px;
-    color: rgb(226, 224, 233);
-    width: 70%;
-    margin: auto;
-    flex-direction: row;
-    /* border: solid 5px rgb(17, 0, 255);   */
-}
-.hero-content p{
-font-size: 24px;
-margin:20px 0 ;
-}
-.hero-content > button{
-    margin: 8px;
-    font-size: 16px;
-    border: none;
-    color: rgb(215, 215, 233);
-    background-color: rgb(8, 8, 8);
-    width: 20%;
-    padding: 12px 24px;
-    position: relative;
-    align-items:center;
-    cursor: pointer;
-    
-}
-.hero-content > button:hover{
-    background-color: rgb(255, 18, 18);
-    color: #e0f520;
 
-}
-.hero-content > h2{
-    margin: auto;
-    flex-direction: row;
-    width: 100%;
+.nav-links a:hover {
     color: #f5bd07;
-    font-size: 50px;
+}
+
+.nav-links button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #850885;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links button:hover {
+    background-color: #f5bd07;
+    color: #222;
+}
+
+.hero-content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: #f5bd07;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 1.5em;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 12px 24px;
+    background-color: #850885;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #f5bd07;
+    color: #222;
+}
+
+.search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search input[type="search"],
+.search button {
+    padding: 10px;
+    border: none;
+    border-radius: 9999px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.destination, .video, .holiday-cards {
+    width: 80%;
+    margin: auto;
+    color: #ccc;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
-.search{
-margin: auto;
-width: 70%;
-margin-top: 10px;
+.column {
+    flex: 30%;
+    padding: 0 4px;
 }
 
-.search > input{
-width: 80%;
-padding: 10px;
-border-radius: 9999px;
-}
-.search > button{
-padding: 10px;
-border-radius:9999px ;
-background-color:rgb(199, 12, 12);
-color: white;
-}
-
-.destination{
-width: 80%;
-margin: auto;
-color: rgb(158, 32, 32);
-display: block;
-margin-top: 250px;
-
-}
-
-
-.row{
-display: flex;
-flex-wrap: wrap;
-padding:  0 4px;
-margin-top: 100px;
-
-}
-
-.colum{
-flex: 25%;
-max-width: 25%;
-padding: 0 4px;
--ms-flex: 25;
-}
-
-.colum > img{
-    margin-top: 8px;
+.column > img {
     width: 100%;
-    vertical-align: middle;
+    margin-top: 8px;
+    border-radius: 8px;
 }
 
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+}
 
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+}
 
+.holiday-cards {
+    text-align: center;
+    margin-top: 50px;
+    color: #eee;
+}
 
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
 
+.card {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 30%;
+    color: #eee;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
 
+.card:hover {
+    transform: translateY(-10px);
+}
 
+.card > img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
 
+.card-content {
+    padding: 16px;
+    text-align: center;
+}
 
+.card-content h2 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+    color: #f5bd07;
+}
 
+.card-content p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.card-content button {
+    margin: 8px 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: #850885;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-content button:hover {
+    background-color: #f5bd07;
+    color: #222;
+}

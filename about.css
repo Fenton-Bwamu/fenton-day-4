@@ -1,121 +1,130 @@
-.NAVIGATION{
-    width: 70%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-
-
-}body{
-    font-size: 30px;
-    color: black;
-    background-color:white;
-    /* /* rgin: 0;ma/ */
-    /* font-family: arial; */ */
-    /* background-image: url(https://images.pexels.com/photos/4626343/pexels-photo-4626343.jpeg?auto=compress&cs=tinysrgb&w=600) */
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
 
-.LOG{
-    color: rgb(211, 17, 17)
-}
-.NAVLINKS{
-    color: rgb(255, 0, 0);
-}
-.NAVLINKS > a{
-    color: blue;
-    text-decoration: none;
-    margin: 16px;
-}
-.hero img {
-width: 50%;
-height: 50%;
-object-fit: cover;
-display: block;
-
-}
-.hero-content{
-    position: absolute;
-    top: 75%;
-    bottom: -750px;
-    width:  100%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 50px;
-    flex-direction: row;
+header {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-   
+    padding: 10px 0;
 }
-.hero-content > h1 {
-    font-size:50px;
-    color: rgb(226, 224, 233);
-    width: 70%;
-    margin: auto;
-    flex-direction: row;
-    /* border: solid 5px rgb(17, 0, 255);   */
-}
-.hero-content p{
-font-size: 24px;
-margin:20px 0 ;
-}
-.hero-content > button{
-    margin: 8px;
-    font-size: 16px;
-    border: none;
-    color: rgb(215, 215, 233);
-    background-color: rgb(8, 8, 8);
-    width: 20%;
-    padding: 12px 24px;
-    position: relative;
-    align-items:center;
-    cursor: pointer;
-    
-}
-.hero-content > button:hover{
-    background-color: rgb(255, 18, 18);
-    color: #e0f520;
 
+header .logo {
+    font-size: 2.5em;
 }
-.hero-content > h2{
-    margin: 0 auto;
-    flex-direction: column;
-    width: 100%;
-    color: #f5bd07;
-    font-size: 30px;
+
+nav {
+    text-align: center;
+    margin-top: 20px;
 }
-.colum{
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 50px;
-    margin-top: 18px;
-    justify-content: center;
-    display: flex;
-    vertical-align: middle;
-    
-    }
-    
-    /* .colum > img{
-        margin-top: 200px;
-        width: 20%;
-        padding: 0 20px;
-        min-height: fit-content;
-         */
-    /* } */
-    .destination > h1{
-    margin: 200px;
-    justify-content: center;
-    margin-bottom: 50px;
-    }
-    .section p{
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: #850885;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    color: #333;
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center; /* Center align headings */
+    text-decoration: underline; /* Add underline to headings */
+}
+
+p {
     line-height: 1.6;
     font-size: 16px;
-    }
-    .colum > img{
-        max-width: 50%;
-        height: auto;
-        display: block;
-        margin: 30px;
-        border-radius: 8px;
-        } 
+    text-align: justify; /* Justify text for better readability */
+}
+
+/* Flex container for sections */
+.destination, .attraction, .accommodation, .activities, .tips {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Styles for each section */
+.destination .destination-info,
+.attraction .attraction-info,
+.accommodation .accommodation-info,
+.activities .activities-info,
+.tips .tips-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+* Responsive image styles */
+.destination img,
+/* .attraction img, */
+.accommodation img,
+.activities img,
+.tips img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-top: 10px; /* Add margin top for spacing */
+}
+
+/* Adjustments for specific sections */
+.attraction {
+    display: fl;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.attraction-info {
+    flex: 1;
+    padding: 0 20px;
     
+}
+
+.attraction img {
+    max-width: 45%; /* Adjust image width */
+    margin-right: 20px; /* Add right margin to image */
+    margin-right: auto;
+
+    
+}
+
+/* Styling links */
+a {
+    color: #850885;
+    text-decoration: none;
+    /* transition: color 0.3s; */
+}
+
+a:hover {
+    color: #333;
+}
